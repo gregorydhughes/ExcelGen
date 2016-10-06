@@ -35,9 +35,12 @@ namespace Source
 				string cat;
 				int loc = 1;
 
+
 				foreach (string file in filesToGen)
 				{
 					cat = (loc < 10) ? "0" + loc.ToString() : loc.ToString();
+
+					cat += " ";
 
 					GenerateExcelSheet(cat+file, columnsInXl);
 
